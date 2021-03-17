@@ -1,5 +1,5 @@
 # dark-theme
-A dark discord theme for [Powercord](https://powercord.dev). -Combination of other themes (Dark Discord, Settings-Icons, GradientButtons v2, Amazing Activity Cards, Pop) + small modifications using code from css-snippets in Powercord's Discord Server
+A dark discord theme for [Powercord](https://powercord.dev). -Combination of other themes ([Dark Discord](https://github.com/snappercord/Dark-Discord), [Settings Icons](https://github.com/snappercord/Settings-Icons), [GradientButtons v2](https://github.com/Discord-Theme-Addons/gradientbuttons-v2), [Amazing Activity Cards](https://github.com/Discord-Theme-Addons/amazing-activity-cards), [Pop](https://github.com/devinkid1/Pop)) + small modifications using code from css-snippets in Powercord's Discord Server
 
 ## Installation
 Themes -> Open CMD / Powershell / Terminal / Gitbash:
