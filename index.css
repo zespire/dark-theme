@@ -1,23 +1,23 @@
 /*** Themes Modules (Other Themes) ***/
 
 
-/** Amazing Activity Cards Theme (Got permission from LuckFire [Not Yet])**/
+/** Amazing Activity Cards Theme (Got permission from LuckFire)**/
 /* -Makes Discord's normal activity cards look a bit nicer. */
 @import url('https://raw.githack.com/Discord-Theme-Addons/amazing-activity-cards/master/src/support/AmazingActivityCards.theme.css');
 
-/** Dark Discord Theme (Got permission from Snapperito [Not Yet])**/
+/** Dark Discord Theme (Got permission from Snapperito)**/
 /* -A simple theme that aims to keep the look and feel of native discord... but darker. */
 @import url('https://raw.githack.com/snappercord/dark-discord/master/source.css');
 
-/** Setting Icon Theme (Got permission from Snapperito [Not Yet])**/
+/** Setting Icon Theme (Got permission from Snapperito)**/
 /* -Adds neat looking icons to the settings menu */
 @import url('https://raw.githack.com/snappercord/Settings-Icons/main/settingsicons.css');
 
-/** Gradient Buttons v2 Theme (Got permission from LuckFire [Not Yet])**/
+/** Gradient Buttons v2 Theme (Got permission from LuckFire)**/
 /* -Add some spice to your buttons.. with gradients! */
 @import url('https://raw.githack.com/Discord-Theme-Addons/gradientbuttons-v2/main/src/support/GradientButtons.theme.css');
 
-/** Pop Theme (Got permission from Devin [Not Yet])**/
+/** Pop Theme (Got permission from Devin)**/
 /* Discord theme that makes UI elements 'pop out' on hover. */
 @import url('https://raw.githack.com/devinkid1/Pop/main/Pop.theme.css');
 
