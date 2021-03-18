@@ -4,7 +4,7 @@ A dark discord theme for [Powercord](https://powercord.dev). -Combination of oth
 ## Installation
 Themes -> Open CMD / Powershell / Terminal / Gitbash:
 ```
-git clone https://github.com/zespire/dark-theme.git
+git clone https://github.com/zespire/dark-theme
 ```
 
 ## Preview
