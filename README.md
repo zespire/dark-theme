@@ -6,7 +6,7 @@ For **[Powercord](http://powercord.dev/):** Themes -> Open CMD / Powershell / Te
 ```
 git clone https://github.com/zespire/dark-theme
 ```
-**For [BetterDiscord](https://betterdiscord.net/):** [Download](https://zespire.github.io/dark-theme/dark.theme.css)
+**For [BetterDiscord](https://github.com/rauenzi/BetterDiscordApp):** [Download](https://zespire.github.io/dark-theme/dark.theme.css)
 ## Preview
 ![Preview](https://cdn.discordapp.com/attachments/820145558500540416/821662373551145000/dark-theme.png)
 
