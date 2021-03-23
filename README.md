@@ -2,11 +2,11 @@
 A dark discord theme for [Powercord](https://powercord.dev). -Combination of other themes ([Dark Discord](https://github.com/snappercord/Dark-Discord), [Settings Icons](https://github.com/snappercord/Settings-Icons), [GradientButtons v2](https://github.com/Discord-Theme-Addons/gradientbuttons-v2), [Amazing Activity Cards](https://github.com/Discord-Theme-Addons/amazing-activity-cards), [Pop](https://github.com/devinkid1/Pop)) + small modifications using code from css-snippets in Powercord's Discord Server
 
 ## Installation
-Themes -> Open CMD / Powershell / Terminal / Gitbash:
+For **[Powercord](http://powercord.dev/):** Themes -> Open CMD / Powershell / Terminal / Gitbash:
 ```
 git clone https://github.com/zespire/dark-theme
 ```
-
+**For [BetterDiscord](https://betterdiscord.net/):** [Download](https://zespire.github.io/dark-theme/dark.theme.css)
 ## Preview
 ![Preview](https://cdn.discordapp.com/attachments/820145558500540416/821662373551145000/dark-theme.png)
 
