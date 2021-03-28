@@ -1,7 +1,7 @@
 /**
  * @name dark-theme
  * @author Zespire#6712
- * @version 1.0
+ * @version 1.0.1
  * @description Combination of other themes (Dark Discord, Settings-Icons, GradientButtons v2, Amazing Activity Cards, Pop) + small modifications using code from css-snippets in Powercord's Discord Server.
  * @source https://github.com/zespire/dark-theme
  */
@@ -178,8 +178,8 @@ margin-top: 5px;
  border: 0 !important;
 }
 
-/** White discord join/explore servers buttons**/
-.circleIconButton-jET_ig svg path{
+/** White discord join/explore servers buttons OLD CSS**/
+/*.circleIconButton-jET_ig svg path{
 fill: #ffffff;
 }
 .circleIconButton-jET_ig.selected-ugP_am{
@@ -187,6 +187,17 @@ background-color: #ffffff;
 }
 .circleIconButton-jET_ig.selected-ugP_am svg path{
 fill: white;
+}*/
+
+/*  White discord join/explore servers buttons */
+.circleIconButton-1QV--U{
+    color: rgb(148, 148, 148);
+    background: var(--background-secondary);
+}
+
+.circleIconButton-1QV--U.selected-1JjBPm {
+    color: #fff;
+    background-color: rgb(66, 66, 66);
 }
 
 /*Better Role Display*/
@@ -206,6 +217,78 @@ fill: white;
   width: 9px;
   height: 9px;
 }
+
+/* lightens nitro boxes on hover*/
+.theme-dark .feature-2w65J5:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+/* pop out badges */
+.theme-dark .profileBadge-2niAfJ:hover {
+    transform: scale(1.2);
+}
+
+/* fixes  badges from amazing-activity-cards import  */
+#app-mount .profileBadge-2niAfJ.profileBadgeHypesquad-12E2P6 {
+    background-image: url(/assets/6c73f47daf179ffade99f501bfc5101b.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileBadgeHypeSquadOnlineHouse1-3rBtjf {
+    background-image: url(/assets/64ae1208b6aefc0a0c3681e6be36f0ff.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileBadgeHypeSquadOnlineHouse2-2oU04B {
+    background-image: url(/assets/48cf0556d93901c8cb16317be2436523.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileBadgeHypeSquadOnlineHouse3-1DoJkv {
+    background-image: url(/assets/9fdc63ef8a3cc1617c7586286c34e4f1.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileBadgeBugHunterLevel1-dbEzVz {
+    background-image: url(/assets/f61b8981e92feead854f52e5a1ba14f0.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileBadgeBugHunterLevel2-3TUciC {
+    background-image: url(/assets/9286332d6e947c91fa91569efce431b0.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileBadgeEarlySupporter-2ng_jL {
+    background-image: url(/assets/23e59d799436a73c024819f84ea0b627.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileBadgePremium-1KDZYC {
+    background-image: url(/assets/386884eecd36164487505ddfbac35a9d.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileGuildSubscriberlvl1-3oI9tx {
+    background-image: url(/assets/fbb6f1e160280f0e9aeb5d7c452eefe1.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileGuildSubscriberlvl2-r6nJHT {
+    background-image: url(/assets/b4b741bef6c3de9b29e2e0653e294620.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileGuildSubscriberlvl3-38s3Dj {
+    background-image: url(/assets/93f5a393e22796a850931483166d7cb9.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileGuildSubscriberlvl4-2NXrsI {
+    background-image: url(/assets/4c380650960c2b1e1584115d5e9ad63b.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileGuildSubscriberlvl5-3XIa2K {
+    background-image: url(/assets/438dd7ecbffcf21b6cbf2773ade51a04.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileGuildSubscriberlvl6-3e3sxW {
+    background-image: url(/assets/7a5f78de816fcecbbd1d5d6e635cc7dd.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileGuildSubscriberlvl7-1dVhQT {
+    background-image: url(/assets/5a24b20b84fb3eafc138916729386e76.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileGuildSubscriberlvl8-1kXdFr {
+    background-image: url(/assets/f31d590e1f3629cd0b614330f4a8ee2a.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileGuildSubscriberlvl9-1d6zav {
+    background-image: url(/assets/9ba64f1fa91ccde0eba506c1c33f3d1a.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileBadgeStaff-3BXdTO {
+    background-image: url(/assets/4358ad1fb423b346324516453750f569.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileBadgePartner-j6Lwhr {
+    background-image: url(/assets/6203964d9d25c394a573fd4f6be36d97.svg);
+}
+#app-mount .profileBadge-2niAfJ.profileBadgeVerifiedDeveloper-195KfD {
+    background-image: url(/assets/45cd06af582dcd3c6b79370b4e3630de.svg);
+};
 
 
 /** Revamped Topbar **/
@@ -269,8 +352,8 @@ svg.icon-22AiRD:hover {
     box-shadow: none !important;
 }
 
-/* Compressed Search Bar */
-.search-2oPWTC .searchBar-3dMhjb {
+/* Compressed Search Bar OLD CSS */
+/*.search-2oPWTC .searchBar-3dMhjb {
   width:25px;transition-duration:600ms;
 }
 .search-2oPWTC .searchBar-3dMhjb:hover {
@@ -278,6 +361,20 @@ svg.icon-22AiRD:hover {
 }
 .search-2oPWTC.open-6_Y_aH .searchBar-3dMhjb {
   width: 250px !important;
+}*/
+
+/* Minified search bar - Just show an icon until your hover it*/
+.search-2oPWTC:not(.open-6_Y_aH) .searchBar-3dMhjb { 
+  width: 27px; transition: 0.25s; background-color: transparent;
+}
+.search-2oPWTC:not(.open-6_Y_aH):hover .searchBar-3dMhjb { 
+  width: 240px; transition: 0.25s; background-color: var(--background-tertiary);
+}
+.search-2oPWTC:not(.open-6_Y_aH) .iconContainer-O4O2CN { 
+  transform: scale(1.2); transition: 0.25s;
+}
+.search-2oPWTC:not(.open-6_Y_aH):hover .iconContainer-O4O2CN { 
+  transform: scale(1); transition: 0.25s;
 }
 
 /* Removes the windows topbar and moves the buttons down */
