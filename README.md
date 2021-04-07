@@ -11,7 +11,7 @@ git clone https://github.com/zespire/dark-theme
 ![Preview](https://cdn.discordapp.com/attachments/820145558500540416/821662373551145000/dark-theme.png)
 
 ### Customization
-- You can edit anything in index.css to your liking. 
+- You can edit anything in `dark.theme.css` to your liking. 
 
 ### Credits
 - [Snapperito](https://github.com/Snapperito): [Dark Discord](https://github.com/snappercord/Dark-Discord) & [Settings Icons](https://github.com/snappercord/Settings-Icons) themes.
