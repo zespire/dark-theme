@@ -1,7 +1,7 @@
 /**
  * @name dark-theme
  * @author Zespire#6712
- * @version 1.0.1
+ * @version 1.0.2
  * @description Combination of other themes (Dark Discord, Settings-Icons, GradientButtons v2, Amazing Activity Cards, Pop) + small modifications using code from css-snippets in Powercord's Discord Server.
  * @source https://github.com/zespire/dark-theme
  */
@@ -29,6 +29,18 @@
 /** Pop Theme (Got permission from Devin)**/
 /* Discord theme that makes UI elements 'pop out' on hover. */
 @import url('https://raw.githack.com/devinkid1/Pop/main/Pop.theme.css');
+
+/** Channel Icons **/
+/* -adds icon to channels */
+@import url('https://raw.githack.com/v-briese/Channel-Icons/main/channelicons.theme.css');
+
+/** FullyThemedDiscord **/
+/* -recolours the things discord doesn't change automatically */
+@import url('https://raw.githack.com/leeprky//main/source.css');
+
+/** Round Stuff **/
+/* -rounds things */
+@import url(https://raw.githack.com/leeprky/MyThemesBasesStuffYeah/lode/round-stuff.css);
 
 
 /*** Small Modifications (css-snippets) ***/
@@ -178,17 +190,6 @@ margin-top: 5px;
  border: 0 !important;
 }
 
-/** White discord join/explore servers buttons OLD CSS**/
-/*.circleIconButton-jET_ig svg path{
-fill: #ffffff;
-}
-.circleIconButton-jET_ig.selected-ugP_am{
-background-color: #ffffff;
-}
-.circleIconButton-jET_ig.selected-ugP_am svg path{
-fill: white;
-}*/
-
 /*  White discord join/explore servers buttons */
 .circleIconButton-1QV--U{
     color: rgb(148, 148, 148);
@@ -213,6 +214,11 @@ fill: white;
   padding-right: 7px;
 }
 .role-2irmRk .roleCircle-3xAZ1j {
+  margin-right: 6px;
+  width: 9px;
+  height: 9px;
+}
+.perm-circle.roleCircle-3xAZ1j.flex-1O1GKY.alignCenter-1dQNNs.justifyCenter-3D2jYp {
   margin-right: 6px;
   width: 9px;
   height: 9px;
@@ -351,17 +357,6 @@ svg.icon-22AiRD:hover {
 .channelName-qsg_a_ > div > .input-2A_zIr {
     box-shadow: none !important;
 }
-
-/* Compressed Search Bar OLD CSS */
-/*.search-2oPWTC .searchBar-3dMhjb {
-  width:25px;transition-duration:600ms;
-}
-.search-2oPWTC .searchBar-3dMhjb:hover {
-  width:250px !important;
-}
-.search-2oPWTC.open-6_Y_aH .searchBar-3dMhjb {
-  width: 250px !important;
-}*/
 
 /* Minified search bar - Just show an icon until your hover it*/
 .search-2oPWTC:not(.open-6_Y_aH) .searchBar-3dMhjb { 
@@ -520,4 +515,209 @@ html.theme-dark .theme-light .footer-2gL1pp {
   -webkit-box-shadow: inset 0 1px 0 rgba(47,49,54,.6);
   box-shadow: inset 0 1px 0 rgba(47,49,54,.6);
   color: var(--text-normal);
+}
+
+/*Fix for padding being added to voice connection*/
+.connection-3KRENF {
+  padding-bottom: 0;
+}
+
+/*Properly fix VCTimer margins by removing them completely*/
+.subtext-3CDbHg p {
+  margin: 0;
+}
+
+/*Fixes Notice Bar For Compact Win Bar*/
+.notice-3uyY6c, .notice-3bPHh- {
+    background-color: var(--background-accent);
+    top: 80px;
+    opacity: 0.9;
+    border-radius: 0px 0px 12px 12px;
+    left: 240px;
+    margin-right: 494px;
+    margin-top: -35px;
+}
+
+/** Bring Theme Toggler and BetterDiscord compatible plugins to top in settings*/
+.side-8zPYf6 > div[data-item-id="pc-moduleManager-themes"],
+.side-8zPYf6 > div[data-item-id="pc-moduleManager-themes"] ~ div { order: 3 }
+.side-8zPYf6 > div[data-item-id="theme-toggler"] { order: 2 !important; }
+.side-8zPYf6 > div[data-item-id="bdCompat"] { order: 1 !important; }
+.item-PXvHYJ[data-item-id=pc-updater] {
+    height: 4.65rem;
+    align-items: unset !important;
+}
+.item-PXvHYJ[data-item-id=pc-updater]::after {
+    position: absolute;
+    margin-top: 2.19rem;
+    border-top: 1px solid var(--background-modifier-accent);
+    line-height: 2.6rem;
+    width: 89.5%;
+    content: "Plugin Settings";
+    color: rgb(159, 159, 159);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/*Spinning settings & top-right icons wiggle on hover */
+@keyframes wiggle {
+   0% { transform: skewX(9deg); } 
+   10% { transform: skewX(-8deg); } 
+   20% { transform: skewX(7deg); } 
+   30% { transform: skewX(-6deg); } 
+   40% { transform: skewX(5deg); } 
+   50% { transform: skewX(-4deg); } 
+   60% { transform: skewX(3deg); } 
+   70% { transform: skewX(-2deg); } 
+   80% { transform: skewX(1deg); } 
+   90% { transform: skewX(0deg); } 
+   100% { transform: skewX(0deg); } 
+} 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+.button-14-BFJ:hover {
+  animation: wiggle 0.9s;
+  background-color: transparent !important;
+}
+.clickable-3rdHwn:hover {
+  animation: wiggle 0.9s;
+  background-color: transparent !important;
+}
+.abutton-14-BFJ,[aria-label|="User Settings"]:hover {
+  animation: rotation 1.2s 1 linear;
+  background-color: transparent !important;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.abutton-14-BFJ,[aria-label|="Mute channel info"]:hover {
+  animation: wiggle 1.2s 1 linear;
+  background-color: transparent !important;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* faded unread indicators   */
+.unreadTop-3rAB3r{
+    width:240px;
+    border-radius: 0 !important;
+    padding: 0;
+  }
+  .unreadTop-3rAB3r .bar-30k2ka:not(.mention-1f5kbO){
+    border-radius: 0 !important;
+    background: linear-gradient(var(--background-accent), transparent);
+    box-shadow: none;
+  }
+  .unreadTop-3rAB3r .bar-30k2ka.mention-1f5kbO{
+    border-radius: 0 !important;
+    background: linear-gradient(#f04747, transparent);
+    box-shadow: none;
+  }
+  .unreadBottom-1_LF_w {
+    width:240px;
+    border-radius: 0 !important;
+    padding:0;
+  }
+  .unreadBottom-1_LF_w  .bar-30k2ka:not(.mention-1f5kbO){
+    border-radius: 0px  !important;
+    background: linear-gradient(0deg, var(--background-accent), transparent);
+    box-shadow: none;
+  }
+  .unreadBottom-1_LF_w  .bar-30k2ka.mention-1f5kbO{
+    border-radius: 0 !important;
+    background: linear-gradient(0deg, #f04747, transparent);
+    box-shadow: none;
+  }
+  .unreadMentionsIndicatorBottom-2mDYbI{
+    padding:0px;
+    height:24px;
+  }
+  .unreadMentionsIndicatorBottom-2mDYbI .unreadMentionsBar-1Bu1dC{
+    border-radius: 0px !important;
+    background: linear-gradient(0deg, #f04747, transparent);
+  }
+  .unreadMentionsIndicatorTop-2-tcdU{
+    padding:0px;
+    height:24px;
+  }
+  .unreadMentionsIndicatorTop-2-tcdU .unreadMentionsBar-1Bu1dC{
+    border-radius: 0 !important;
+    background: linear-gradient(#f04747, transparent);
+  }
+
+/* gives colourless embeds custom (blue-dark) gradient border */
+.embed-IeVjo6:not([style]) {
+  border-left: none;
+}
+.embed-IeVjo6:not([style])::before {
+  content: '';
+  left: 0;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100% );
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+.embed-IeVjo6:not([style]) .grid-1nZz7S {
+  margin-left: 4.25px;
+}
+
+/*Enlarged/grow on hover custom status emojis */
+.customStatusText-2wWmYP {
+  display: block;
+}
+.customStatusEmoji-1itGdP {
+  --props: 1.1s ease-in-out;
+  margin: 0px auto 0px;
+  width: 48px !important;
+  height: 48px !important;
+  transition: width var(--props),
+              height var(--props);
+}
+.customStatusEmoji-1itGdP:hover {
+  margin-bottom: 9px;
+  width: 120px !important;
+  height: 120px !important;
+}
+
+/* Reduce User Profile margins*/
+.headerText-2WJ44e.userSelectText-1o1dQ7 {
+  margin-left: 0px !important;
+  margin-bottom: 0px !important;
+}
+.customStatus-3NamXG {
+  margin-top: 0px !important;
+}
+.avatarHint-1E3LMl {
+  display: none !important;
+}
+
+/* Black User Profile Banner */
+.profileBanner-33-uE1 {
+   visibility: hidden;
+}
+
+/* Hides "Right click user for more actions" tip below message in user profile */
+.protip-YaFfgO.marginTop8-1DLZ1n {
+ visibility: hidden;
+}
+
+/* No Message in User Popouts */
+/* - Bugged with enlarge custom status emoji
+.avatarHint-1E3LMl, .protip-YaFfgO,.footer-1fjuF6 {
+  display: none
+} 
+*/
+
+/* fix ugly reaction border*/
+.reaction-1hd86g.reactionMe-wv5HKu {
+    background-color: rgb(0 0 0 / 25%);
+    border-color: rgb(47 47 47 / 43%);
 }
