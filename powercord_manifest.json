@@ -1,7 +1,7 @@
 {
     "name": "dark-theme",
     "description": "Combination of other themes (Dark Discord, Settings-Icons, GradientButtons v2, Amazing Activity Cards, Pop) + small modifications using code from css-snippets in Powercord's Discord Server.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Zespire#6712",
     "theme": "dark.theme.css",
     "splashTheme": "splash.css",
